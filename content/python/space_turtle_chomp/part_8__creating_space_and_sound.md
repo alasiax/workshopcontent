@@ -45,9 +45,8 @@ Step 4.  The space cabbages currently are the same size as your turtle lets
 # create food
 max_foods = 10
 
-
-for food in foods:
-    foods.shapesize(.5)
+for count in range(maxFoods):
+    new_food.shapesize(.5)
 ```
 
 Step 5.  Save your game as kbgame8 and run your module
