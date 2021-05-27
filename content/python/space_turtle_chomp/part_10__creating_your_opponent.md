@@ -55,15 +55,15 @@ Step 4. Next cut the following text and paste it directly underneath:
 
 Step 5. Edit the pasted text to:
 
-```py
+```python
     # Boundary Comp Checking x coordinate
     if comp.xcor() > 290 or comp.xcor() < -290:
-        comp.right(180)
+        comp.right(random.randint(30,155))
         os.system('afplay bounce.mp3&')
 
     # Boundary Comp Checking y coordinate
     if comp.ycor() > 290 or comp.ycor() < -290:
-        comp.right(180)
+        comp.right(random.randint(30,155))
         os.system('afplay bounce.mp3&')
 ```
 
@@ -86,7 +86,7 @@ comp_score = 0
 Step 8. Now you create your competition score just under your \# Create
  opponent turtle section by adding:
 
-```py
+```python
 # Create competition score
 mypen2 = turtle.Turtle()
 mypen2.color('red')
